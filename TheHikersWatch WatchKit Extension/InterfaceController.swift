@@ -31,6 +31,8 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         userLocationInfo.append("\(location.course)")
         userLocationInfo.append("\(location.speed)")
         
+        print(userLocationInfo)
+        
     }
 
     override func awake(withContext context: Any?) {
