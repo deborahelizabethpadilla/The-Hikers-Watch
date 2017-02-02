@@ -22,6 +22,8 @@
 		509A35B71E43A7CA00B9238D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509A35B61E43A7CA00B9238D /* ExtensionDelegate.swift */; };
 		509A35B91E43A7CA00B9238D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509A35B81E43A7CA00B9238D /* Assets.xcassets */; };
 		509A35D01E43A83000B9238D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509A35CF1E43A83000B9238D /* CoreLocation.framework */; };
+		509A35D21E43CDE000B9238D /* tableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509A35D11E43CDDF00B9238D /* tableRowController.swift */; };
+		509A35D31E43CDE000B9238D /* tableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509A35D11E43CDDF00B9238D /* tableRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,7 @@
 		509A35B81E43A7CA00B9238D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		509A35BA1E43A7CA00B9238D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		509A35CF1E43A83000B9238D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		509A35D11E43CDDF00B9238D /* tableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				509A35A51E43A7CA00B9238D /* Interface.storyboard */,
+				509A35D11E43CDDF00B9238D /* tableRowController.swift */,
 				509A35A81E43A7CA00B9238D /* Assets.xcassets */,
 				509A35AA1E43A7CA00B9238D /* Info.plist */,
 			);
@@ -426,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509A35D21E43CDE000B9238D /* tableRowController.swift in Sources */,
 				509A357E1E43A7C900B9238D /* ViewController.swift in Sources */,
 				509A357C1E43A7C900B9238D /* AppDelegate.swift in Sources */,
 			);
@@ -451,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509A35D31E43CDE000B9238D /* tableRowController.swift in Sources */,
 				509A35B71E43A7CA00B9238D /* ExtensionDelegate.swift in Sources */,
 				509A35B51E43A7CA00B9238D /* InterfaceController.swift in Sources */,
 			);

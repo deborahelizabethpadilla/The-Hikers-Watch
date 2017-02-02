@@ -13,6 +13,8 @@ import CoreLocation
 
 class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
+    @IBOutlet var table: WKInterfaceTable!
+    
     var locationManager = CLLocationManager()
     
     var userLocationInfo = [String]()
@@ -35,6 +37,12 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         
         print(userLocationInfo)
         
+        table.setNumberOfRows(userLocationInfo.count, withRowType: "tableRowController")
+        
+        for (index, value) in userLocationInfo.enumerated() {
+            let row = table.rowController(at: index) as! tableRowController
+            row.tableRowLabel.setText(value)
+        }
     }
 
     override func awake(withContext context: Any?) {
