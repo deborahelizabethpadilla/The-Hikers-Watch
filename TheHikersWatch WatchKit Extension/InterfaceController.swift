@@ -29,11 +29,11 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         
         userLocationInfo.removeAll(keepingCapacity: true)
         
-        userLocationInfo.append("\(location.coordinate.latitude)")
-        userLocationInfo.append("\(location.coordinate.longitude)")
-        userLocationInfo.append("\(location.altitude)")
-        userLocationInfo.append("\(location.course)")
-        userLocationInfo.append("\(location.speed)")
+        userLocationInfo.append("Lat: \(location.coordinate.latitude)")
+        userLocationInfo.append("Long: \(location.coordinate.longitude)")
+        userLocationInfo.append("Alt: \(location.altitude)")
+        userLocationInfo.append("Speed: \(location.course)")
+        userLocationInfo.append("Course: \(location.speed)")
         
         print(userLocationInfo)
         
