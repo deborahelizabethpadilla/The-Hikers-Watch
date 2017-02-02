@@ -25,6 +25,8 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         
         let location = locationArray.lastObject as! CLLocation
         
+        userLocationInfo.removeAll(keepingCapacity: true)
+        
         userLocationInfo.append("\(location.coordinate.latitude)")
         userLocationInfo.append("\(location.coordinate.longitude)")
         userLocationInfo.append("\(location.altitude)")
