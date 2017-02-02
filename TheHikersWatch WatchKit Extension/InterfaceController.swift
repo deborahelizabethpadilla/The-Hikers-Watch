@@ -15,9 +15,21 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()
     
+    var userLocationInfo = [String]()
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         print(locations)
+        
+        let locationArray = locations as NSArray
+        
+        let location = locationArray.lastObject as! CLLocation
+        
+        userLocationInfo.append("\(location.coordinate.latitude)")
+        userLocationInfo.append("\(location.coordinate.longitude)")
+        userLocationInfo.append("\(location.altitude)")
+        userLocationInfo.append("\(location.course)")
+        userLocationInfo.append("\(location.speed)")
         
     }
 
