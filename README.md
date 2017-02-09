@@ -1,5 +1,7 @@
 # The-Hikers-Watch
 
+**Summary:**
+
 This watchOS application was created to assist hikers in finding their exact coordinates while hiking.
 
 **The application offers the following features:**
