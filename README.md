@@ -1,4 +1,4 @@
-# The-Hikers-Watch
+# The Hikers Watch
 
 **Summary:**
 
